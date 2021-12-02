@@ -35,11 +35,9 @@ a {
 
 .navbar a {
   float: left;
-  font-size: 16px;
-  color: white;
   text-align: center;
-  padding: 16px 20px;
-  text-decoration: none;
+  padding: 0px 20px;
+  margin: 24px;
 }
 
 .dropdown {
@@ -48,11 +46,16 @@ a {
   z-index: 501;
 }
 
+.dropdown {
+  background-image: url(/images/annabanana-logo.svg);
+  background-size: cover;
+}
+
 .dropdown .dropbtn {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: white;
+  color: #333;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -60,10 +63,9 @@ a {
 }
 
 .dropdown-content {
-  margin-top: 80px;
-  display: none;
+  margin-top: 75px;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 502;
@@ -71,8 +73,8 @@ a {
 
 .dropdown-content a {
   float: none;
-  color: black;
-  padding: 12px 16px;
+  color: white;
+  padding: 0px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -155,7 +157,7 @@ a {
     flex: 1;
     padding-top: 75px;
     padding-bottom: 75px;
-    margin-right: 100px;
+    margin-right: 68px;
     margin-left: 22px;
 }
 .logo.map {
@@ -301,13 +303,20 @@ html, body , .menu-container {
   margin-top: 100px;
   display: flex;
 }
+.contain-tea {
+  display: flex;
+  flex-direction: column;
+}
 .about {
-  flex:1;
   margin: 40px;
 }
 .about.content{
   color:white;
   margin-top: 78px;
+  flex: 1;
+}
+about.teaspill{
+  flex:1;
 }
 html, body , .about-column {
   height: 100%;
@@ -346,8 +355,8 @@ html, body , .about-column {
   width:200vw;
   height:110vh;
   outline: 0;
-  overflow: hidden;
-  display: flex;
+  left:0;
+  right:0;
 }
 
 
@@ -369,11 +378,10 @@ html, body , .about-column {
   left:-50px;
   height: 150%;
   width: 250%;
-  background-color: var(--background);
-  border-radius: 25%; /* Smooth edges to appear like liquid */
-  animation: spin 6s ease-in-out forwards; /* Set to forwards to freeze on last frame */
-  transform-origin: 0;
-}
+  animation: spin 6s ease-in-out forwards;background-color: var(--background);
+  border-radius: 25%; 
+  }/* Smooth edges to appear like liquid */
+
 
 @keyframes spin {
   0% {

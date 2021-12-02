@@ -2,7 +2,6 @@ $('.banana').click(function () {
   let phonesound = $('audio#phonesound')[0]
   phonesound.play()
   $('.banana').toggleClass('jiggle')
-
 })
 
 // $(window).on('cup-load', function () {
@@ -10,6 +9,7 @@ $('.banana').click(function () {
 // })//
 $(".teacup").click(function () {
   $("#teacup-spill").toggleClass('flip');
+  $('.box').addClass('go');
 })
 
 $('.break').click(function () {
@@ -25,13 +25,15 @@ $('.lunch').click(function () {
 $('.dropdown').mouseover(function () {
   $('.dropdown-content').css('display', 'block')
 })
+
 $('.dropdown').mouseout(function () {
   $('.dropdown-content').css('display', 'none')
 })
 
 function click(element) {
-  elmeent.click('flip');
+  element.click('flip');
 }
+
 function hover(element) {
   element.setAttribute('src', 'images/breakfast-post.svg');
 }
