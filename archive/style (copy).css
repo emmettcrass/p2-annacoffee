@@ -31,48 +31,48 @@ a {
   z-index: 500;
   overflow: visible;
   width:100%;
-  text-align: center;
 }
 
 .navbar a {
+  float: left;
   text-align: center;
   padding: 0px 20px;
   margin: 24px;
 }
 
-.homelogo {
+.dropdown {
   float: left;
-  /* overflow: hidden; 
-  ------
-    z-index: 501;
-    background-size: cover;
-    margin-left: 154px;
-    margin-top: 9px;
-    margin-bottom: 11px;
-    text-align: center;
-    width: 6%;*/
+  /* overflow: hidden; */
   z-index: 501;
+  background-image: url(/images/annabanana-logo.svg);
   background-size: cover;
-  margin-left: 57px;
+  margin-left: 5px;
   margin-top: 8px;
   margin-bottom: 11px;
 }
 
-.homelogo img {
-  width:30%;
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #333;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
-.dropdown {
-    float: right;
-    font-size: 21px;
-    background-color: inherit;
-    font-family: inherit;
-    margin-top: 36px;
-    margin-bottom: 8px;
-    margin-right: 202px;
+.dropdown-content {
+  margin-top: 95px;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 502;
+  display: hidden;
 }
 
-.dropdown a {
+.dropdown-content a {
   float: none;
   color: white;
   padding: 0px 16px;
@@ -80,8 +80,13 @@ a {
   text-align: left;
 }
 
-.dropdown a:hover {
-  color: red;
+.dropdown-content a:hover {
+  background-color: tan;
+  display: block;
+}
+
+.dropdown:hover {
+  display: block;
 }
 
 /*---End of Nav---*/

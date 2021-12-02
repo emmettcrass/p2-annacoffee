@@ -22,6 +22,16 @@ $('.lunch').click(function () {
   $('.lunch-menu').css('display', 'block')
 })
 
+$('.dropdown').mouseover(function () {
+  $('.dropdown-content').css('display', 'block')
+})
+
+$('.dropdown').mouseout(function () {
+  $('.dropdown-content').css('display', 'none')
+})
+
+
+
 function click(element) {
   element.click('flip');
 }
