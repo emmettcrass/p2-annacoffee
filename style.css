@@ -9,15 +9,6 @@ a {
   font-size: 48px;
   text-align: center;
 }
-.about-content {
-  position: absolute;
-  top:0;
-  left:0;
-  color: white;
-  padding:100px;
-  margin-top: 20%;
-  margin-right: 38%;
-  }
 
 /*--Nav Bar--*/
 .navbar {
@@ -307,14 +298,20 @@ html, body , .menu-container {
 .about {
   margin: 40px;
 }
-.about.content{
-  color:white;
-  margin-top: 78px;
+
+.about.content {
+  position: flex;
+  top:0;
+  left:0;
+  padding:100px;
+  margin-top: 20%;
+  margin-right: 38%;
+  }
+
+.about.teaspill{
   flex: 1;
 }
-about.teaspill{
-  flex:1;
-}
+
 html, body , .about-column {
   height: 100%;
   margin: 0;
