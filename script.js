@@ -1,48 +1,47 @@
-$('.banana').click(function () {
-  let phonesound = $('audio#phonesound')[0]
+$(".banana").click(function () {
+  let phonesound = $("audio#phonesound")[0]
   phonesound.play()
-  $('.banana').toggleClass('jiggle')
+  $(".banana").toggleClass("jiggle")
 })
 
 // $(window).on('cup-load', function () {
 //   $('.load-wrapper').fadeOut('slow');
 // })//
 $(".teacup").click(function () {
-  $("#teacup-spill").toggleClass('flip');
-  $('.box').addClass('go');
+  $("#teacup-spill").toggleClass("flip")
+  $(".makeitspill").addClass("box")
 })
 
-$('.break').click(function () {
-  $('.break').remove()
-  $('.break-menu').css('display', 'block')
-
+$(".break").click(function () {
+  $(".break").remove()
+  $(".break-menu").css("display", "block")
 })
-$('.lunch').click(function () {
-  $('.lunch').remove()
-  $('.lunch-menu').css('display', 'block')
+$(".lunch").click(function () {
+  $(".lunch").remove()
+  $(".lunch-menu").css("display", "block")
 })
 
 function click(element) {
-  element.click('flip');
+  element.click("flip")
 }
 
 function hover(element) {
-  element.setAttribute('src', 'images/breakfast-post.svg');
+  element.setAttribute("src", "images/breakfast-post.svg")
 }
 
 function unhover(element) {
-  element.setAttribute('src', 'images/breakfast-pre.svg');
+  element.setAttribute("src", "images/breakfast-pre.svg")
 }
 
 function hoverL(element) {
-  element.setAttribute('src', 'images/lunch-post.svg');
+  element.setAttribute("src", "images/lunch-post.svg")
 }
 
 function unhoverL(element) {
-  element.setAttribute('src', 'images/lunch-pre.svg');
+  element.setAttribute("src", "images/lunch-pre.svg")
 }
 
-hover();
-unhover();
-hoverL();
-unhoverL();
+hover()
+unhover()
+hoverL()
+unhoverL()
