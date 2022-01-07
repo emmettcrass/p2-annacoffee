@@ -16,7 +16,6 @@ a {
   margin-right: -15px;*/
   position: fixed;
   top: 0;
-  z-index: 500;
   overflow: visible;
   width: 100%;
   text-align: center;
@@ -75,9 +74,6 @@ a {
 /*---End of Nav---*/
 
 /*----Ring Phone----*/
-* {
-  box-sizing: border-box;
-}
 svg {
   width: 75%;
 }
@@ -288,7 +284,7 @@ body,
   margin: 0;
 }
 
-For presentation only .menu-container {
+/*For presentation only*/ .menu-container {
   position: relative;
 }
 
@@ -307,6 +303,10 @@ For presentation only .menu-container {
   margin-top: 100px;
   display: flex;
 }
+.about-column>*h1 {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
 .contain-tea {
   display: flex;
   flex-direction: row;
@@ -315,18 +315,15 @@ For presentation only .menu-container {
   flex: 1;
 }
 .about {
-  margin: 40px;
+  margin: 20px 0px 0px;
+
 }
 
 .about.content {
-  position: flex;
+  padding: 10px 0px 0px 20px;
   top: 0;
   left: 0;
   display: hidden;
-}
-
-.about.teaspill {
-  flex: 1;
 }
 
 html,
@@ -334,15 +331,17 @@ body,
 .about-column {
   height: 100%;
   margin: 0;
-  margin-top: 34px;
+  margin-top: 60px;
 }
 
 #spill-type {
-  margin-top: 2px;
+  margin-left: 40px;
   margin-bottom: 92px;
-  width: 70%;
+  width: 30%;
 }
-.teaspill {
+.about.teaspill {
+  padding: 0px 20px;
+  margin: 0;
   display: block;
 }
 #teacup-spill {
@@ -367,8 +366,8 @@ body.aboutpage {
   width: 200vw;
   height: 110vh;
   outline: 0;
-  left: 0;
   right: 0;
+  padding: 0px;
 }
 
 .box::before {
@@ -379,33 +378,32 @@ body.aboutpage {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 .box::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -50px;
+  left: 0px;
   height: 150%;
-  width: 250%;
+  width: 300%;
   animation: spin 6s ease-in-out forwards;
   background-color: var(--background);
-  border-radius: 25%;
+  border-radius: 30%;
 }
 
 @keyframes spin {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(90%) rotate(0deg);
   }
   25% {
-    transform: translateY(-15%) rotate(-15deg);
+    transform: translateY(0%) rotate(-15deg);
   }
   50% {
-    transform: translateY(-40%) rotate(15deg);
+    transform: translateY(-35%) rotate(15deg);
   }
   75% {
-    transform: translateY(-75%) rotate(-15deg);
+    transform: translateY(-65%) rotate(-15deg);
   }
   100% {
     transform: translateY(-100%) rotate(10deg);
