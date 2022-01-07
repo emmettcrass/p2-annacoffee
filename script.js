@@ -10,6 +10,7 @@ $(".banana").click(function () {
 $(".teacup").click(function () {
   $("#teacup-spill").toggleClass("flip")
   $(".makeitspill").addClass("box")
+  $(".makeitspill").addClass("about content")
 })
 
 $(".break").click(function () {

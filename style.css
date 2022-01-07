@@ -1,6 +1,3 @@
-a:hover {
-  color: lightcoral;
-}
 a {
   color: black;
   text-decoration: none;
@@ -325,6 +322,7 @@ For presentation only .menu-container {
   position: flex;
   top: 0;
   left: 0;
+  display: hidden;
 }
 
 .about.teaspill {
@@ -360,9 +358,8 @@ body.aboutpage {
 }
 /*----fill---*/
 :root {
-  --background: white;
+  --background: #c1f0e9;
   --dark: #886c43;
-  --liquid: blue;
 }
 
 .box {
@@ -395,7 +392,7 @@ body.aboutpage {
   animation: spin 6s ease-in-out forwards;
   background-color: var(--background);
   border-radius: 25%;
-} /* Smooth edges to appear like liquid */
+}
 
 @keyframes spin {
   0% {
